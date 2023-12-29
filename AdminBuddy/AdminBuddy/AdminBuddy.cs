@@ -1,3 +1,5 @@
+//https://github.com/IT-GRUNT/WinowsAdminBuddy
+
 using System.Diagnostics;
 using System.Diagnostics.Eventing.Reader;
 
@@ -36,12 +38,6 @@ namespace AdminBuddy
             Process.Start("explorer.exe", "https://github.com/builtbybel/Bloatynosy");
         }
 
-
-
-        private void checkBox6_CheckedChanged(object sender, EventArgs e)
-        {
-
-        }
 
         private void button1_Click(object sender, EventArgs e)
         {
