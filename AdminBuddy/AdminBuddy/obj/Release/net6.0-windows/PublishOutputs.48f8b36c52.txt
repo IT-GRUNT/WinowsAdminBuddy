@@ -1,0 +1,6 @@
+C:\Users\Owner\Desktop\AdminBuddy.exe
+C:\Users\Owner\Desktop\AdminBuddy.dll
+C:\Users\Owner\Desktop\AdminBuddy.deps.json
+C:\Users\Owner\Desktop\AdminBuddy.runtimeconfig.json
+C:\Users\Owner\Desktop\AdminBuddy.dll.config
+C:\Users\Owner\Desktop\AdminBuddy.pdb

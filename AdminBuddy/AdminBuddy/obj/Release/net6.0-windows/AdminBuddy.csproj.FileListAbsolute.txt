@@ -1,0 +1,17 @@
+C:\Users\Owner\Desktop\AdminBuddy\AdminBuddy\bin\Release\net6.0-windows\AdminBuddy.exe
+C:\Users\Owner\Desktop\AdminBuddy\AdminBuddy\bin\Release\net6.0-windows\AdminBuddy.dll.config
+C:\Users\Owner\Desktop\AdminBuddy\AdminBuddy\bin\Release\net6.0-windows\AdminBuddy.deps.json
+C:\Users\Owner\Desktop\AdminBuddy\AdminBuddy\bin\Release\net6.0-windows\AdminBuddy.runtimeconfig.json
+C:\Users\Owner\Desktop\AdminBuddy\AdminBuddy\bin\Release\net6.0-windows\AdminBuddy.dll
+C:\Users\Owner\Desktop\AdminBuddy\AdminBuddy\bin\Release\net6.0-windows\AdminBuddy.pdb
+C:\Users\Owner\Desktop\AdminBuddy\AdminBuddy\obj\Release\net6.0-windows\AdminBuddy.AdminBuddy.resources
+C:\Users\Owner\Desktop\AdminBuddy\AdminBuddy\obj\Release\net6.0-windows\AdminBuddy.csproj.GenerateResource.cache
+C:\Users\Owner\Desktop\AdminBuddy\AdminBuddy\obj\Release\net6.0-windows\AdminBuddy.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Owner\Desktop\AdminBuddy\AdminBuddy\obj\Release\net6.0-windows\AdminBuddy.AssemblyInfoInputs.cache
+C:\Users\Owner\Desktop\AdminBuddy\AdminBuddy\obj\Release\net6.0-windows\AdminBuddy.AssemblyInfo.cs
+C:\Users\Owner\Desktop\AdminBuddy\AdminBuddy\obj\Release\net6.0-windows\AdminBuddy.csproj.CoreCompileInputs.cache
+C:\Users\Owner\Desktop\AdminBuddy\AdminBuddy\obj\Release\net6.0-windows\AdminBuddy.dll
+C:\Users\Owner\Desktop\AdminBuddy\AdminBuddy\obj\Release\net6.0-windows\refint\AdminBuddy.dll
+C:\Users\Owner\Desktop\AdminBuddy\AdminBuddy\obj\Release\net6.0-windows\AdminBuddy.pdb
+C:\Users\Owner\Desktop\AdminBuddy\AdminBuddy\obj\Release\net6.0-windows\AdminBuddy.genruntimeconfig.cache
+C:\Users\Owner\Desktop\AdminBuddy\AdminBuddy\obj\Release\net6.0-windows\ref\AdminBuddy.dll

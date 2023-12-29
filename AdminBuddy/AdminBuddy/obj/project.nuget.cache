@@ -1,0 +1,13 @@
+{
+  "version": 2,
+  "dgSpecHash": "c5NVTzhuW+n5qSpniEoQhuUYfr1kT87FDKk98/myIGwLlPA9yuR8dJ6LPbM76677dqMDKDpL7kgA+yROklGJAA==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\Owner\\Desktop\\AdminBuddy\\AdminBuddy\\AdminBuddy.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Owner\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\6.0.25\\microsoft.windowsdesktop.app.ref.6.0.25.nupkg.sha512",
+    "C:\\Users\\Owner\\.nuget\\packages\\microsoft.netcore.app.ref\\6.0.25\\microsoft.netcore.app.ref.6.0.25.nupkg.sha512",
+    "C:\\Users\\Owner\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\6.0.25\\microsoft.aspnetcore.app.ref.6.0.25.nupkg.sha512",
+    "C:\\Users\\Owner\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\6.0.25\\microsoft.netcore.app.host.win-x64.6.0.25.nupkg.sha512"
+  ],
+  "logs": []
+}
