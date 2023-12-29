@@ -29,21 +29,21 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(AdminBuddy));
-            checkBox1 = new CheckBox();
+            BlockMSTCheckBox = new CheckBox();
             groupBox1 = new GroupBox();
-            checkBox7 = new CheckBox();
-            checkBox8 = new CheckBox();
-            checkBox4 = new CheckBox();
+            DisableBingSearchCheckBox = new CheckBox();
+            DisableSHighLightsCheckbox = new CheckBox();
+            EnableMSTCheckBox = new CheckBox();
             menuStrip1 = new MenuStrip();
             homeToolStripMenuItem = new ToolStripMenuItem();
             aboutToolStripMenuItem1 = new ToolStripMenuItem();
             groupBox2 = new GroupBox();
-            checkBox6 = new CheckBox();
-            checkBox3 = new CheckBox();
-            button1 = new Button();
+            DisableTPMCheckbox = new CheckBox();
+            DisableWSCRIPTCheckbox = new CheckBox();
+            ApplySettingsBTN = new Button();
             groupBox3 = new GroupBox();
-            linkLabel4 = new LinkLabel();
-            linkLabel1 = new LinkLabel();
+            Services_Label = new LinkLabel();
+            LUSRMGR_Label = new LinkLabel();
             groupBox4 = new GroupBox();
             linkLabel3 = new LinkLabel();
             linkLabel2 = new LinkLabel();
@@ -57,167 +57,187 @@
             Main_Panel.SuspendLayout();
             SuspendLayout();
             // 
-            // checkBox1
+            // BlockMSTCheckBox
             // 
-            checkBox1.AutoSize = true;
-            checkBox1.Location = new Point(6, 22);
-            checkBox1.Name = "checkBox1";
-            checkBox1.Size = new Size(163, 34);
-            checkBox1.TabIndex = 0;
-            checkBox1.Text = "Block Microsoft Telemetry\r\n(Via Host File)";
-            checkBox1.UseVisualStyleBackColor = true;
+            BlockMSTCheckBox.AutoSize = true;
+            BlockMSTCheckBox.Location = new Point(8, 28);
+            BlockMSTCheckBox.Margin = new Padding(4);
+            BlockMSTCheckBox.Name = "BlockMSTCheckBox";
+            BlockMSTCheckBox.Size = new Size(203, 44);
+            BlockMSTCheckBox.TabIndex = 0;
+            BlockMSTCheckBox.Text = "Block Microsoft Telemetry\r\n(Via Host File)";
+            BlockMSTCheckBox.UseVisualStyleBackColor = true;
+            BlockMSTCheckBox.CheckedChanged += BlockMSTCheckBox_CheckedChanged;
             // 
             // groupBox1
             // 
-            groupBox1.Controls.Add(checkBox7);
-            groupBox1.Controls.Add(checkBox8);
-            groupBox1.Controls.Add(checkBox4);
-            groupBox1.Controls.Add(checkBox1);
-            groupBox1.Location = new Point(12, 27);
+            groupBox1.Controls.Add(DisableBingSearchCheckBox);
+            groupBox1.Controls.Add(DisableSHighLightsCheckbox);
+            groupBox1.Controls.Add(EnableMSTCheckBox);
+            groupBox1.Controls.Add(BlockMSTCheckBox);
+            groupBox1.Location = new Point(15, 34);
+            groupBox1.Margin = new Padding(4);
             groupBox1.Name = "groupBox1";
-            groupBox1.Size = new Size(246, 157);
+            groupBox1.Padding = new Padding(4);
+            groupBox1.Size = new Size(308, 196);
             groupBox1.TabIndex = 2;
             groupBox1.TabStop = false;
             groupBox1.Text = "Privacy";
             // 
-            // checkBox7
+            // DisableBingSearchCheckBox
             // 
-            checkBox7.AutoSize = true;
-            checkBox7.Location = new Point(6, 87);
-            checkBox7.Name = "checkBox7";
-            checkBox7.Size = new Size(224, 34);
-            checkBox7.TabIndex = 3;
-            checkBox7.Text = "Disable Bing Search From Start Menu \r\n(Win 11)";
-            checkBox7.UseVisualStyleBackColor = true;
+            DisableBingSearchCheckBox.AutoSize = true;
+            DisableBingSearchCheckBox.Location = new Point(8, 109);
+            DisableBingSearchCheckBox.Margin = new Padding(4);
+            DisableBingSearchCheckBox.Name = "DisableBingSearchCheckBox";
+            DisableBingSearchCheckBox.Size = new Size(281, 44);
+            DisableBingSearchCheckBox.TabIndex = 3;
+            DisableBingSearchCheckBox.Text = "Disable Bing Search From Start Menu \r\n(Win 11)";
+            DisableBingSearchCheckBox.UseVisualStyleBackColor = true;
             // 
-            // checkBox8
+            // DisableSHighLightsCheckbox
             // 
-            checkBox8.AutoSize = true;
-            checkBox8.Location = new Point(6, 62);
-            checkBox8.Name = "checkBox8";
-            checkBox8.Size = new Size(207, 19);
-            checkBox8.TabIndex = 3;
-            checkBox8.Text = "Disable Search Highlights (Win 11)";
-            checkBox8.UseVisualStyleBackColor = true;
+            DisableSHighLightsCheckbox.AutoSize = true;
+            DisableSHighLightsCheckbox.Location = new Point(8, 78);
+            DisableSHighLightsCheckbox.Margin = new Padding(4);
+            DisableSHighLightsCheckbox.Name = "DisableSHighLightsCheckbox";
+            DisableSHighLightsCheckbox.Size = new Size(261, 24);
+            DisableSHighLightsCheckbox.TabIndex = 3;
+            DisableSHighLightsCheckbox.Text = "Disable Search Highlights (Win 11)";
+            DisableSHighLightsCheckbox.UseVisualStyleBackColor = true;
             // 
-            // checkBox4
+            // EnableMSTCheckBox
             // 
-            checkBox4.AutoSize = true;
-            checkBox4.Location = new Point(6, 127);
-            checkBox4.Name = "checkBox4";
-            checkBox4.Size = new Size(147, 19);
-            checkBox4.TabIndex = 2;
-            checkBox4.Text = "Set Host File To Default";
-            checkBox4.UseVisualStyleBackColor = true;
+            EnableMSTCheckBox.AutoSize = true;
+            EnableMSTCheckBox.Location = new Point(8, 159);
+            EnableMSTCheckBox.Margin = new Padding(4);
+            EnableMSTCheckBox.Name = "EnableMSTCheckBox";
+            EnableMSTCheckBox.Size = new Size(187, 24);
+            EnableMSTCheckBox.TabIndex = 2;
+            EnableMSTCheckBox.Text = "Set Host File To Default";
+            EnableMSTCheckBox.UseVisualStyleBackColor = true;
+            EnableMSTCheckBox.CheckedChanged += EnableMSTCheckBox_CheckedChanged;
             // 
             // menuStrip1
             // 
             menuStrip1.BackColor = Color.Transparent;
+            menuStrip1.ImageScalingSize = new Size(20, 20);
             menuStrip1.Items.AddRange(new ToolStripItem[] { homeToolStripMenuItem, aboutToolStripMenuItem1 });
             menuStrip1.Location = new Point(0, 0);
             menuStrip1.Name = "menuStrip1";
-            menuStrip1.Size = new Size(526, 24);
+            menuStrip1.Padding = new Padding(8, 2, 0, 2);
+            menuStrip1.Size = new Size(658, 28);
             menuStrip1.TabIndex = 3;
             menuStrip1.Text = "menuStrip1";
             // 
             // homeToolStripMenuItem
             // 
             homeToolStripMenuItem.Name = "homeToolStripMenuItem";
-            homeToolStripMenuItem.Size = new Size(52, 20);
+            homeToolStripMenuItem.Size = new Size(64, 24);
             homeToolStripMenuItem.Text = "Home";
             homeToolStripMenuItem.Click += homeToolStripMenuItem_Click;
             // 
             // aboutToolStripMenuItem1
             // 
             aboutToolStripMenuItem1.Name = "aboutToolStripMenuItem1";
-            aboutToolStripMenuItem1.Size = new Size(52, 20);
+            aboutToolStripMenuItem1.Size = new Size(64, 24);
             aboutToolStripMenuItem1.Text = "About";
             aboutToolStripMenuItem1.Click += aboutToolStripMenuItem1_Click;
             // 
             // groupBox2
             // 
-            groupBox2.Controls.Add(checkBox6);
-            groupBox2.Controls.Add(checkBox3);
-            groupBox2.Location = new Point(264, 27);
+            groupBox2.Controls.Add(DisableTPMCheckbox);
+            groupBox2.Controls.Add(DisableWSCRIPTCheckbox);
+            groupBox2.Location = new Point(330, 34);
+            groupBox2.Margin = new Padding(4);
             groupBox2.Name = "groupBox2";
-            groupBox2.Size = new Size(246, 157);
+            groupBox2.Padding = new Padding(4);
+            groupBox2.Size = new Size(308, 196);
             groupBox2.TabIndex = 4;
             groupBox2.TabStop = false;
             groupBox2.Text = "Security";
             // 
-            // checkBox6
+            // DisableTPMCheckbox
             // 
-            checkBox6.AutoSize = true;
-            checkBox6.Location = new Point(6, 46);
-            checkBox6.Name = "checkBox6";
-            checkBox6.Size = new Size(180, 19);
-            checkBox6.TabIndex = 2;
-            checkBox6.Text = "Disable TPM 2.0 Requirement";
-            checkBox6.UseVisualStyleBackColor = true;
-            checkBox6.CheckedChanged += checkBox6_CheckedChanged;
+            DisableTPMCheckbox.AutoSize = true;
+            DisableTPMCheckbox.Location = new Point(8, 58);
+            DisableTPMCheckbox.Margin = new Padding(4);
+            DisableTPMCheckbox.Name = "DisableTPMCheckbox";
+            DisableTPMCheckbox.Size = new Size(226, 24);
+            DisableTPMCheckbox.TabIndex = 2;
+            DisableTPMCheckbox.Text = "Disable TPM 2.0 Requirement";
+            DisableTPMCheckbox.UseVisualStyleBackColor = true;
             // 
-            // checkBox3
+            // DisableWSCRIPTCheckbox
             // 
-            checkBox3.AutoSize = true;
-            checkBox3.Location = new Point(6, 22);
-            checkBox3.Name = "checkBox3";
-            checkBox3.Size = new Size(170, 19);
-            checkBox3.TabIndex = 0;
-            checkBox3.Text = "Block VBS, VBE, && Scripting";
-            checkBox3.UseVisualStyleBackColor = true;
+            DisableWSCRIPTCheckbox.AutoSize = true;
+            DisableWSCRIPTCheckbox.Location = new Point(8, 28);
+            DisableWSCRIPTCheckbox.Margin = new Padding(4);
+            DisableWSCRIPTCheckbox.Name = "DisableWSCRIPTCheckbox";
+            DisableWSCRIPTCheckbox.Size = new Size(212, 24);
+            DisableWSCRIPTCheckbox.TabIndex = 0;
+            DisableWSCRIPTCheckbox.Text = "Block VBS, VBE, && Scripting";
+            DisableWSCRIPTCheckbox.UseVisualStyleBackColor = true;
             // 
-            // button1
+            // ApplySettingsBTN
             // 
-            button1.Location = new Point(12, 321);
-            button1.Name = "button1";
-            button1.Size = new Size(75, 23);
-            button1.TabIndex = 5;
-            button1.Text = "Apply";
-            button1.UseVisualStyleBackColor = true;
-            button1.Click += button1_Click;
+            ApplySettingsBTN.Location = new Point(15, 401);
+            ApplySettingsBTN.Margin = new Padding(4);
+            ApplySettingsBTN.Name = "ApplySettingsBTN";
+            ApplySettingsBTN.Size = new Size(94, 29);
+            ApplySettingsBTN.TabIndex = 5;
+            ApplySettingsBTN.Text = "Apply";
+            ApplySettingsBTN.UseVisualStyleBackColor = true;
+            ApplySettingsBTN.Click += ApplySettingsBTN_Click;
             // 
             // groupBox3
             // 
-            groupBox3.Controls.Add(linkLabel4);
-            groupBox3.Controls.Add(linkLabel1);
-            groupBox3.Location = new Point(12, 190);
+            groupBox3.Controls.Add(Services_Label);
+            groupBox3.Controls.Add(LUSRMGR_Label);
+            groupBox3.Location = new Point(15, 238);
+            groupBox3.Margin = new Padding(4);
             groupBox3.Name = "groupBox3";
-            groupBox3.Size = new Size(246, 125);
+            groupBox3.Padding = new Padding(4);
+            groupBox3.Size = new Size(308, 156);
             groupBox3.TabIndex = 6;
             groupBox3.TabStop = false;
             groupBox3.Text = "Admin Shortcuts";
             // 
-            // linkLabel4
+            // Services_Label
             // 
-            linkLabel4.AutoSize = true;
-            linkLabel4.LinkColor = Color.RoyalBlue;
-            linkLabel4.Location = new Point(6, 44);
-            linkLabel4.Name = "linkLabel4";
-            linkLabel4.Size = new Size(147, 15);
-            linkLabel4.TabIndex = 1;
-            linkLabel4.TabStop = true;
-            linkLabel4.Text = "Manage Services (services)";
-            linkLabel4.LinkClicked += linkLabel4_LinkClicked;
+            Services_Label.AutoSize = true;
+            Services_Label.LinkColor = Color.RoyalBlue;
+            Services_Label.Location = new Point(8, 55);
+            Services_Label.Margin = new Padding(4, 0, 4, 0);
+            Services_Label.Name = "Services_Label";
+            Services_Label.Size = new Size(185, 20);
+            Services_Label.TabIndex = 1;
+            Services_Label.TabStop = true;
+            Services_Label.Text = "Manage Services (services)";
+            Services_Label.LinkClicked += linkLabel4_LinkClicked;
             // 
-            // linkLabel1
+            // LUSRMGR_Label
             // 
-            linkLabel1.AutoSize = true;
-            linkLabel1.LinkColor = Color.RoyalBlue;
-            linkLabel1.Location = new Point(6, 19);
-            linkLabel1.Name = "linkLabel1";
-            linkLabel1.Size = new Size(187, 15);
-            linkLabel1.TabIndex = 0;
-            linkLabel1.TabStop = true;
-            linkLabel1.Text = "Manage Users && Groups (lusrmgr)";
-            linkLabel1.LinkClicked += linkLabel1_LinkClicked;
+            LUSRMGR_Label.AutoSize = true;
+            LUSRMGR_Label.LinkColor = Color.RoyalBlue;
+            LUSRMGR_Label.Location = new Point(8, 24);
+            LUSRMGR_Label.Margin = new Padding(4, 0, 4, 0);
+            LUSRMGR_Label.Name = "LUSRMGR_Label";
+            LUSRMGR_Label.Size = new Size(233, 20);
+            LUSRMGR_Label.TabIndex = 0;
+            LUSRMGR_Label.TabStop = true;
+            LUSRMGR_Label.Text = "Manage Users && Groups (lusrmgr)";
+            LUSRMGR_Label.LinkClicked += linkLabel1_LinkClicked;
             // 
             // groupBox4
             // 
             groupBox4.Controls.Add(linkLabel3);
             groupBox4.Controls.Add(linkLabel2);
-            groupBox4.Location = new Point(264, 190);
+            groupBox4.Location = new Point(330, 238);
+            groupBox4.Margin = new Padding(4);
             groupBox4.Name = "groupBox4";
-            groupBox4.Size = new Size(246, 125);
+            groupBox4.Padding = new Padding(4);
+            groupBox4.Size = new Size(308, 156);
             groupBox4.TabIndex = 7;
             groupBox4.TabStop = false;
             groupBox4.Text = "Recommended Tools";
@@ -226,9 +246,10 @@
             // 
             linkLabel3.AutoSize = true;
             linkLabel3.LinkColor = Color.RoyalBlue;
-            linkLabel3.Location = new Point(6, 44);
+            linkLabel3.Location = new Point(8, 55);
+            linkLabel3.Margin = new Padding(4, 0, 4, 0);
             linkLabel3.Name = "linkLabel3";
-            linkLabel3.Size = new Size(158, 15);
+            linkLabel3.Size = new Size(202, 20);
             linkLabel3.TabIndex = 2;
             linkLabel3.TabStop = true;
             linkLabel3.Text = "BloatyNosy - Debloat Win 11";
@@ -238,9 +259,10 @@
             // 
             linkLabel2.AutoSize = true;
             linkLabel2.LinkColor = Color.RoyalBlue;
-            linkLabel2.Location = new Point(6, 19);
+            linkLabel2.Location = new Point(8, 24);
+            linkLabel2.Margin = new Padding(4, 0, 4, 0);
             linkLabel2.Name = "linkLabel2";
-            linkLabel2.Size = new Size(111, 15);
+            linkLabel2.Size = new Size(137, 20);
             linkLabel2.TabIndex = 1;
             linkLabel2.TabStop = true;
             linkLabel2.Text = "Winutil - Chris Titus";
@@ -250,37 +272,39 @@
             // 
             Main_Panel.Controls.Add(groupBox4);
             Main_Panel.Controls.Add(groupBox3);
-            Main_Panel.Controls.Add(button1);
+            Main_Panel.Controls.Add(ApplySettingsBTN);
             Main_Panel.Controls.Add(groupBox2);
             Main_Panel.Controls.Add(groupBox1);
             Main_Panel.Dock = DockStyle.Fill;
             Main_Panel.Location = new Point(0, 0);
+            Main_Panel.Margin = new Padding(4);
             Main_Panel.Name = "Main_Panel";
-            Main_Panel.Size = new Size(526, 360);
+            Main_Panel.Size = new Size(658, 450);
             Main_Panel.TabIndex = 9;
-            Main_Panel.Paint += Main_Panel_Paint;
             // 
             // about1
             // 
             about1.BackgroundImage = (Image)resources.GetObject("about1.BackgroundImage");
             about1.Dock = DockStyle.Fill;
             about1.Location = new Point(0, 0);
+            about1.Margin = new Padding(4, 5, 4, 5);
             about1.Name = "about1";
-            about1.Size = new Size(526, 360);
+            about1.Size = new Size(658, 450);
             about1.TabIndex = 10;
             // 
             // AdminBuddy
             // 
-            AutoScaleDimensions = new SizeF(96F, 96F);
+            AutoScaleDimensions = new SizeF(120F, 120F);
             AutoScaleMode = AutoScaleMode.Dpi;
             AutoSize = true;
-            ClientSize = new Size(526, 360);
+            ClientSize = new Size(658, 450);
             Controls.Add(menuStrip1);
             Controls.Add(Main_Panel);
             Controls.Add(about1);
             FormBorderStyle = FormBorderStyle.FixedSingle;
             Icon = (Icon)resources.GetObject("$this.Icon");
             MainMenuStrip = menuStrip1;
+            Margin = new Padding(4);
             MaximizeBox = false;
             Name = "AdminBuddy";
             StartPosition = FormStartPosition.CenterScreen;
@@ -304,23 +328,23 @@
 
         #endregion
 
-        private CheckBox checkBox1;
+        private CheckBox BlockMSTCheckBox;
         private GroupBox groupBox1;
         private MenuStrip menuStrip1;
         private GroupBox groupBox2;
-        private CheckBox checkBox3;
-        private Button button1;
+        private CheckBox DisableWSCRIPTCheckbox;
+        private Button ApplySettingsBTN;
         private GroupBox groupBox3;
-        private LinkLabel linkLabel1;
+        private LinkLabel LUSRMGR_Label;
         private GroupBox groupBox4;
         private LinkLabel linkLabel2;
         private LinkLabel linkLabel3;
         private About about1;
-        private LinkLabel linkLabel4;
-        private CheckBox checkBox4;
-        private CheckBox checkBox6;
-        private CheckBox checkBox7;
-        private CheckBox checkBox8;
+        private LinkLabel Services_Label;
+        private CheckBox EnableMSTCheckBox;
+        private CheckBox DisableTPMCheckbox;
+        private CheckBox DisableBingSearchCheckBox;
+        private CheckBox DisableSHighLightsCheckbox;
         public Panel Main_Panel;
         private ToolStripMenuItem homeToolStripMenuItem;
         private ToolStripMenuItem aboutToolStripMenuItem1;

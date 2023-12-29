@@ -21,9 +21,6 @@ namespace AdminBuddy
 
         {
 
-
-
-
         }
 
         #region "TPM Settings"
@@ -72,7 +69,7 @@ namespace AdminBuddy
             }
             catch (Exception ex)
             {
-                Interaction.MsgBox(ex.Message);
+             Interaction.MsgBox(ex.Message);
             }
         }
         #endregion
@@ -131,7 +128,7 @@ namespace AdminBuddy
         #endregion
 
 
-
+        #region "Telemetry Settings"
         public static void DisableMSTele()
         {
 
@@ -156,9 +153,6 @@ namespace AdminBuddy
 
 
             }
-
-
-
 
 
         }
@@ -186,6 +180,7 @@ namespace AdminBuddy
 
             }
 
+            #endregion
 
 
         }

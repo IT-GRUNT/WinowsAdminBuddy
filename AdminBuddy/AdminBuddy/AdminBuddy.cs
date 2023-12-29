@@ -7,8 +7,8 @@ namespace AdminBuddy
 {
     public partial class AdminBuddy : Form
     {
-        public static object Properties { get; internal set; }
-        public static object Resources { get; internal set; }
+         public static object Properties { get; internal set; }
+         public static object Resources { get; internal set; }
 
         public AdminBuddy()
         {
@@ -18,7 +18,6 @@ namespace AdminBuddy
         private void AdminBuddy_Load(object sender, EventArgs e)
         {
         }
-
         private void linkLabel1_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
             Process.Start("mmc.exe", "lusrmgr.msc");
@@ -27,57 +26,46 @@ namespace AdminBuddy
         {
             Process.Start("mmc.exe", "services.msc");
         }
-
         private void linkLabel2_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
             Process.Start("explorer.exe", "https://github.com/ChrisTitusTech/winutil");
         }
-
         private void linkLabel3_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
             Process.Start("explorer.exe", "https://github.com/builtbybel/Bloatynosy");
         }
 
-
-        private void button1_Click(object sender, EventArgs e)
+        private void ApplySettingsBTN_Click(object sender, EventArgs e)
         {
-
-
-            if (checkBox1.Checked == true)
+            ApplySettingsBTN.Text = "Applying...";
+            ApplySettingsBTN.Enabled = false;
+            if (BlockMSTCheckBox.Checked == true)
             {
                 Commands.DisableMSTele();
-
             }
-
-
-            if (checkBox4.Checked == true)
+            if (EnableMSTCheckBox.Checked == true)
             {
                 Commands.EnableMSTele();
             }
-
-            if (checkBox6.Checked == true)
+            if (DisableTPMCheckbox.Checked == true)
             {
                 Commands.TurnOnTPMBypass("AllowUpgradesWithUnsupportedTPMOrCPU");
             }
-
-            if (checkBox8.Checked == true)
+            if (DisableSHighLightsCheckbox.Checked == true)
             {
                 Commands.TurnOffSearchHighlights("IsDynamicSearchBoxEnabled");
             }
-
-            if (checkBox7.Checked == true)
+            if (DisableBingSearchCheckBox.Checked == true)
             {
                 Commands.TurnOffBingSearch("DisableSearchBoxSuggestions");
             }
-
-            if (checkBox3.Checked == true)
+            if (DisableWSCRIPTCheckbox.Checked == true)
             {
                 Commands.TurnOffScripting("Enabled");
             }
-
-
-
-
+            ApplySettingsBTN.Text = "Apply";
+            ApplySettingsBTN.Enabled = true;
+            MessageBox.Show("Finished.");
         }
 
         private void aboutToolStripMenuItem1_Click(object sender, EventArgs e)
@@ -92,9 +80,19 @@ namespace AdminBuddy
             Main_Panel.Visible = true;
         }
 
-        private void Main_Panel_Paint(object sender, PaintEventArgs e)
+        private void EnableMSTCheckBox_CheckedChanged(object sender, EventArgs e)
         {
-
+            if (BlockMSTCheckBox.Checked == true)
+            {
+                EnableMSTCheckBox.Checked = false;
+            }
+        }
+        private void BlockMSTCheckBox_CheckedChanged(object sender, EventArgs e)
+        {
+            if (EnableMSTCheckBox.Checked == true)
+            {
+                BlockMSTCheckBox.Checked = false;
+            }
         }
     }
 }
